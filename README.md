@@ -1,16 +1,15 @@
 # Stock-Market-Database
 
-A real-time self-updating database. The database tracks given stocks' prices and volumes in every minute from 2012-01-01 to present.
-
+A real-time self-updating database. The database tracks given stocks' prices and volumes in every minute from 2012-01-01 to present. Database is organized in a way that is convenient especially for deep learning training. Data will be collected through Alpha Vantage(Copyright © Alpha Vantage Inc. 2017). 
 
 ## Structure:
 
 data: stocks; history(); update(); add_stock();
 - stock: 
-- - year:
-- - - date:
-- - - - price list
-- - - - volume list
+  - year:
+    - date:
+      - price list
+      - volume list
 
 ### data.stocks
 return a list of tracked stock identification strings
