@@ -4,6 +4,7 @@ A real-time self-updating database. The database tracks given stocks' prices and
 
 ## Structure:
 Outer structure: dictionary with stock ID string as key
+
 Inner structure: pandas data frame with row names being time (up to which day) and high, low, open, close, volume as columns
 data: stocks; history(); update(); add_stock();
 - stock: 
