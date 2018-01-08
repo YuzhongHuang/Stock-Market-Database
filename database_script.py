@@ -34,6 +34,23 @@ class data(object):
 #        Constructor with parameters
 #        """
 #        self.stocks = keyValPairs
+    def history(self, start_date, end_year_date):
+        """Given a start date and an end date, return a truncated data in the given time slot
+        
+        Args: 
+            start_date(string): format: "yyyy-mm-dd"
+            end_year_date(string): same format as start_date
+            
+        Returns:
+            A "data" object with a subset of data points 
+        """
+        ret = {}
+        # iterate through all stocks
+        for key, val in stocks:
+#            ret[key] = truncated stock tables
+        
+        return ret
+        
 
     def trim(self, rawData):
         """Only keep data after the given date. Simplify stock table format
@@ -41,6 +58,9 @@ class data(object):
         Args:
             rawData(pandas DataFrame): 20 years' full stock data with default
                                        row names.
+                                       
+        Returns:
+            A DataFrame with data points since the interested starting date
         """
         # get a subset of data depending on startDate
         rawData = rawData[rawData['date']>=self.startDate]
